@@ -1,0 +1,50 @@
+.search-results {
+	main .btn-primary {
+		display: block;
+		margin: 20px 0;
+	}
+	main .btn-primary a {
+		color: #fff;
+	}
+	main .btn-primary a:hover {
+		text-decoration: none;
+		border-bottom-width: 0px;
+	}
+	main header {
+		box-shadow: none;
+		border-bottom-width: 0px;
+	}
+	main article {
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+	}
+	main .title-breadcrumbs {
+		margin-bottom: 50px;
+	}
+}
+
+.home-testimonials {
+	padding: 25px 0;
+}
+.home-testimonials {
+	.fluid-width-video-wrapper {
+		border: 20px solid #575553 !important;
+		-khtml-border-radius: 5px !important;
+		box-shadow: 0 3px 3px rgba(0,0,0,.2) !important;
+		-moz-box-shadow: 0 3px 3px rgba(0,0,0,.2) !important;
+		-webkit-box-shadow: 0 3px 3px rgba(0,0,0,.2) !important;
+		border-radius: 5px !important;
+	}
+}
+.page-footer-call 
+{
+	background: $brand-accent;
+	text-align: center;
+	padding: 25px 0;
+}
+.page-footer-call {
+	p, h2 {
+		color: #fff;
+	}
+}

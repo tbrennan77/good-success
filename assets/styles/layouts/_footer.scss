@@ -1,0 +1,78 @@
+footer {
+	background-color: $brand-primary;
+	min-height: 150px;
+	padding: 25px 0;
+	border-top: 10px solid $brand-primary-alt2;
+
+}
+.footer-logo {
+	max-height: 100px;
+}
+
+footer {
+	h3 {
+		font-weight: 700;
+		color: $brand-white;
+	}
+	p, ul, li, a, i, .textwidget {
+		color: $brand-white;
+		font-weight: 500;
+		font-size: 16px;
+	}
+	a:hover {
+		color: $brand-accent;
+		text-decoration: underline;
+	}
+	.fa {
+		font-size: 28px;
+	}
+	ul li,
+	ol li {
+		display: inline;
+		list-style-type: none;
+	}
+	.tribe-events-list-widget .tribe-event-featured {
+		background-color: transparent !important;
+	}
+	ul {
+		padding-left: 0;
+		padding-top: 20px;
+	}
+	ul li {
+		margin-right: 15px;
+	}
+	ol, .tribe-list-widget {
+		padding-left: 0;
+	}
+	h4, .tribe-event-title {
+		margin-bottom: 0;
+		color: $brand-primary-alt1; 
+		text-transform: capitalize;
+	}
+	span, .tribe-event-date-start, .tribe-event-date-end {
+		color: $brand-primary-alt2;
+	}
+	section {
+		margin-bottom: 40px;
+	}
+}
+
+
+/* Small devices (phone, 300px and up) */
+@media (min-width: 300px) { 
+	footer section {
+		text-align: center;
+	}
+}
+
+/* Large devices (phone, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	footer section {
+		text-align: left;
+	}
+}

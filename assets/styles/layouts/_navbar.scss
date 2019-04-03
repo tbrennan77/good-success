@@ -1,0 +1,165 @@
+.navbar-light .navbar-nav .nav-link,
+.mega-menu-link,
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item > a.mega-menu-link {
+  font-size: 18px;
+  font-family: 'Montserrat', arial;
+  color: #4d5353;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .active>.nav-link,
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item.mega-toggle-on > a.mega-menu-link, 
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item > a.mega-menu-link:hover, 
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item > a.mega-menu-link:focus,
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item > a.mega-menu-link:hover {
+	color: $brand-accent;
+  background-color: transparent;
+  font-weight: 500;
+}
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item.mega-toggle-on > a.mega-menu-link, 
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item > a.mega-menu-link:hover, 
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item > a.mega-menu-link:focus,
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item > a.mega-menu-link:hover {
+  padding-bottom: 35px;
+}
+.navbar-light .navbar-nav .nav-item {
+	margin-top: 5px;
+	padding: 5px;
+}
+.navbar-nav {
+    margin-right: 0;
+    margin-left: auto;
+}
+.navbar-brand {
+	padding-top: 0;
+}
+.navbar {
+  width: 100%;
+}
+.navbar-nav .btn-primary {
+    -webkit-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+    box-shadow: 0 0 0 0 rgba(116, 185, 214, .7);
+    padding: 10px 25px;
+    position: relative;
+    top: -4px;
+}
+.navbar-nav .btn-primary:hover 
+{
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
+  background-color: $brand-primary-alt2;
+  color: $brand-accent;
+}
+.navbar-light .navbar-toggler {
+  border-color: rgba(0,0,0,0) !important;
+}
+.navbar-toggler-icon {
+  font-size: 28px !important;
+  color: $brand-primary !important;
+}
+
+.min-width-300 {
+  min-width: 300px;
+}
+
+.mega-sub-menu {
+  .textwidget {
+    text-align: center;
+  }
+  .textwidget h3 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 10px;
+  }
+  .textwidget p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.navbar-collapse {
+    /* position: absolute;
+    width: 100%;
+    top: 78px; */
+}
+
+.navbar-full-width {
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+.navbar-full-width .mega-menu {
+  margin-left: 20px !important;
+}
+/* Small devices (phone, 300px and up) */
+@media (min-width: 300px) { 
+  .navbar-light .navbar-nav .nav-link,
+  #mega-menu-wrap-primary_navigation #mega-menu-primary_navigation>li.mega-menu-item>a.mega-menu-link, .mega-menu-link {
+    font-size: 16px;
+  }
+  .navbar-collapse .btn-outline-primary, .btn-primary {
+
+  }
+  #mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item {
+    padding: 8px 0;
+  }
+  .navbar-brand {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-light .navbar-nav .nav-link,
+  #mega-menu-wrap-primary_navigation #mega-menu-primary_navigation>li.mega-menu-item>a.mega-menu-link, .mega-menu-link {
+    font-size: 13px;
+    padding: 0 8px;
+  }
+  .mega-menu-item .btn-outline-primary, 
+  .mega-menu-item .btn-primary {
+      padding: 5px 15px;
+      font-size: 13px;
+  }
+  .navbar-brand {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 992px) {
+
+  #mega-menu-wrap-primary_navigation .mega-menu-toggle {
+      display: none !important;
+  }
+  #mega-menu-wrap-primary_navigation .mega-menu-toggle + #mega-menu-primary_navigation {
+      display: block !important;
+  }
+}
+/* Large devices (phone, 1200px and up) */
+@media (min-width: 1200px) { 
+  .navbar-light .navbar-nav .nav-link,
+  #mega-menu-wrap-primary_navigation #mega-menu-primary_navigation>li.mega-menu-item>a.mega-menu-link, .mega-menu-link {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .navbar-collapse .btn-outline-primary, .btn-primary {
+      
+  }
+  #mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item {
+ 
+  }
+  .mega-menu-item .btn-outline-primary, 
+  .mega-menu-item .btn-primary {
+      padding: 10px 25px;
+      font-size: 16px;
+  }
+}
+
+

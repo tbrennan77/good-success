@@ -1,0 +1,119 @@
+.blog-top {
+	margin-top: 50px;
+}
+.feature-blog-img {
+	border: 10px solid $brand-primary-alt2;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 25px;
+}
+.archive-meta {
+	margin-bottom: 25px;
+}
+.single-sfwd-courses .archive-meta {
+	display: none;
+}
+.archive-meta span {
+	padding: 0 10px ;
+	border-right: 1px solid $brand-primary-alt2;
+	font-size: 14px;
+}
+.archive-meta span:first-child {
+	padding-left: 0;
+}
+.archive-meta span:last-child {
+	border-right: 0px solid $brand-primary-alt1;
+}
+.archive-excerpt {
+	button {
+		margin: 20px 0;
+		clear: both;
+		display: block;
+	}
+	button a, 
+	button a:hover {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+nav.custom-pagination {
+	span.page-numbers {
+		padding: 5px 10px;
+    	margin: 5px;
+    	border-radius: 5px;
+	}
+	.current {
+		background-color: $brand-accent !important;
+		color: $brand-white !important;
+	}
+}
+.single-post {
+	article header {
+		border-bottom: 0px solid #fff;
+		box-shadow: none;
+	}
+}
+
+	#searchform {
+	
+	}
+	#searchform #s {
+	-webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+          padding: 5px 10px;
+          border: 1px solid $brand-primary-alt2;
+          box-shadow: none;
+          width: 84%;
+	}
+	#searchform .fa {
+		color: $brand-white;
+	}
+	#searchform button {
+		background-color: $brand-accent;
+		-webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+          padding: 5px;
+          border: 1px solid $brand-primary-alt2;
+          box-shadow: none;
+          width: 14%;
+	}
+	.widget_categories {
+		margin-top: 25px;
+	}
+	.widget_categories {
+		h3  {
+			font-size: 22px;
+		}
+		ul {
+			padding-left: 0;
+		}
+		li {
+			list-style-type: none;
+			border-bottom: 1px solid $brand-primary-alt2;
+			padding: 5px 0;
+			font-size: 16px;
+		}
+		li:before {
+			content: "> ";
+		}
+	}
+	.widget_display_forums {
+		h3  {
+			font-size: 22px;
+		}
+		ul {
+			padding-left: 0;
+		}
+		li {
+			list-style-type: none;
+			border-bottom: 1px solid $brand-primary-alt2;
+			padding: 5px 0;
+			font-size: 16px;
+		}
+		li:before {
+			content: "> ";
+		}
+	}
