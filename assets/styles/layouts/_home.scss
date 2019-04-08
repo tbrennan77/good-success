@@ -1,0 +1,58 @@
+.home {
+	h1 {
+		letter-spacing: -.02em;
+		font-size: 40px;
+    	line-height: 42px!important;
+	}
+	.testimonial-message {
+		p {
+			font-size: 34px;
+		    line-height: 40px;
+		    font-family: Lato,Montserrat,sans-serif;
+		    font-weight: 500;
+		    color: #575553;
+		    padding-bottom: 0;
+		}	
+	}
+	.testimonial-name,
+	.testimonial-author,
+	.testimonial-website a,
+	.testimonial-tagline {
+			font-size: 24px;
+		    line-height: 27px;
+		    font-family: Lato,Montserrat,sans-serif;
+		    font-weight: 300;
+		    color: $brand-primary-alt1;	
+	}
+	.testimonial-website a {
+		    color: #fa9101 !important;
+		    font-size: 16px;
+		    line-height: 18px;
+	}
+	h2 {
+	    color: #B2B1AF !important;
+	    display: inline-block;
+	    font-weight: 900 !important;
+	    letter-spacing: -.02em !important;
+	    font-size: 40px;
+	}
+	h2:after {
+		content: ""; /* This is necessary for the pseudo element to work. */ 
+	    display: block; /* This will put the pseudo element on its own line. */
+	    margin: 0 auto; /* This will center the border. */
+	    width: 40%; /* Change this to whatever width you want. */
+	    padding-top: 10px; /* This creates some space between the element and the border. */
+	    border-bottom: 5px solid $brand-accent; /* This creates the border. Replace black with whatever color you want. */
+	    float: left;
+	}
+	.coming-events h2 {
+		color: #fff !important;
+	}
+	.coming-events h2:after {
+		border-bottom-color: $brand-primary;
+	}
+	.next-event {
+	text-align: left !important;
+    	margin: 0 !important;
+	}
+}
