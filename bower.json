@@ -6,7 +6,5 @@
   ],
   "license": "MIT",
   "private": true,
-  "dependencies": {
-    "bxslider-4": "bxslider-4#^4.2.8"
-  }
+  "dependencies": {}
 }
