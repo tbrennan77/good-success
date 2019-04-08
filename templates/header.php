@@ -30,8 +30,8 @@
           <?php dynamic_sidebar('top-bar'); ?> 
         </div>
         <div class="col-xs-12 col-sm-4 justify-content-sm-center">
-          <a class="float-lg-right member-access-link collapsed" data-toggle="collapse" href="#loginSlider" aria-expanded="false" aria-controls="collapseExample">
-            <span>Member Access</span>
+          <a class="float-lg-right member-access-link" data-toggle="collapse" href="#loginSlider" role="button" aria-expanded="false" aria-controls="loginSlider">
+            Member Access
           </a>
           <a class="float-lg-right eternal-access-link" href="/eternal-success/">
             Eternal Success
@@ -43,50 +43,29 @@
 </div>
 
 <header class="banner">
-  <div class="container-fluid">
+  <div class="container menu-bar">
     <div class="row">
-      <div class="container min-width-300">
-        <div class="row">
+        <div class="navbar-header col-lg-12">
           <nav class="navbar navbar-toggleable-md navbar-light sticky-top pr-0 pl-0">
-            <button class="navbar-toggler navbar-toggler-right float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
-              <div class="hidden-xs-down float-left">
                 <?php
-                    if ( get_theme_mod('theme_logo') ) :
-                      echo '<img src="' . esc_url( get_theme_mod('theme_logo') ) . '" class="">';
-                    else:
-                      echo get_bloginfo('name');
-                    endif;
-                ?>
-              </div>
-              <div class="hidden-sm-up float-left">
-                <?php
-                    if ( get_theme_mod('mobile_logo') ) :
-                      echo '<img src="' . esc_url( get_theme_mod('mobile_logo') ) . '" class="">';
-                    else:
-                      echo get_bloginfo('name');
-                    endif;
-                ?>
-              </div>
-            </a>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <?php
-                if (has_nav_menu('primary_navigation')) :
-                  wp_nav_menu(['theme_location' => 'primary_navigation', 
-                    'menu_class' => 'navbar-nav justify-content-center float-right', 
-                    'fallback_cb'=> 'wp_bootstrap_navwalker::fallback',
-                    'walker'     => new wp_bootstrap_navwalker()]);
-                endif;
-              ?>
-            </div>
+                  if (has_nav_menu('primary_navigation')) :
+                    wp_nav_menu([ 'menu' => 'primary_navigation',
+                      'theme_location' => 'primary_navigation',
+                      'container_class' => 'collapse navbar-toggleable-md',
+                      'menu_id' => false,
+                      'menu_class' => 'nav navbar-nav',
+                      'depth' => 2,
+                      'fallback_cb' => 'bs4navwalker::fallback',
+                      'walker' => new bs4navwalker()
+                      ]);
+                  endif;
+                  
+                  //get_template_part('templates/search');
+                   ?>
           </nav>
         </div>
-      </div>
     </div>
   </div>
 </header>
+
 

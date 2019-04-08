@@ -7,7 +7,7 @@
     	<div class="col-lg-4 col-sm-12">
     		<?php dynamic_sidebar('sidebar-footer-2'); ?>
     	</div>
-    	<div class="col-lg-5 col-sm-12">
+    	<div class="col-lg-7 col-sm-12">
     		<?php dynamic_sidebar('sidebar-footer-3'); ?>
     	</div>
     </div>
