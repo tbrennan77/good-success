@@ -26,6 +26,7 @@
     "node": ">= 4.5"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^5.8.1",
     "asset-builder": "^1.1.0",
     "browser-sync": "^2.8.2",
     "del": "^2.2.2",
