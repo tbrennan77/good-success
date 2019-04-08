@@ -362,41 +362,21 @@ footer .tribe-events-list-widget .tribe-events-list-widget-events {
 
 /* Small devices (phone, 300px and up) */
 @media (min-width: 300px) { 
-	.home .et_pb_testimonial_description_inner {
-		margin-left: 0 !important;
-	}
-	.default_page_header {
-		/* background-image: url(/app/themes/sage/dist/images/hero2.jpg) !important; */
-	}
 	.epyt-gallery {
 	    max-width: 95%;
 		margin: auto;
 	}
-	.where-wayne {
-	   float: left;
-	   margin-left: 0px !important;
-	}
-	.where-wayne-all {
-		margin-left: 0px !important;
-		float: left;
-	}
+
 }
 
 /* Large devices (phone, 768px and up) */
 @media (min-width: 768px) { 
-	.where-wayne {
-	   margin-left: 30px !important;
-	}
-	.where-wayne-all {
-		margin-left: 30px !important;
-	}
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-	.home .et_pb_testimonial_description_inner {
-		margin-left: 20% !important;
-	}
+
 	.default_page_header {
 		/* background-image: none !important; */
 	}
