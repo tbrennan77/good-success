@@ -24,15 +24,18 @@
             the_title();
           }
           ?></h1>
-        </div>
-        <div class="col-lg-4 hidden-md-down">
-          <div class="breadcrumbs float-right align-middle" typeof="BreadcrumbList" vocab="http://schema.org/">
+          <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
               <?php if(function_exists('bcn_display'))
               {
                 bcn_display();
                 //the_breadcrumb();
               }?>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          
         </div>
       </div>
     </div>
