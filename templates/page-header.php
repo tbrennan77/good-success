@@ -5,7 +5,7 @@
   <div class="title-breadcrumbs">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-lg-8">
+        <div class="col-sm-12">
           <h1 class="entry-title"><?php
           
           if( is_search()) {

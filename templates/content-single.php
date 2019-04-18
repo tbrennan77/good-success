@@ -14,6 +14,7 @@
           <div class="col-sm-12 archive-excerpt">
           <?php the_content(); ?>
           </div>
+         
         </div>
     </div>
     <div class="col-sm-0 col-lg-3">
@@ -21,6 +22,15 @@
       if(is_active_sidebar('archives-right-top')) dynamic_sidebar('archives-right-top');
       if(is_active_sidebar('archives-right-bottom')) dynamic_sidebar('archives-right-bottom'); ?>
       <div style="clear: both; margin-bottom: 30px;"></div><!-- clears the floating -->
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 page-footer-call">
+      <?php
+        if(is_active_sidebar('page-footer')) dynamic_sidebar('page-footer');
+      ?>
     </div>
   </div>
 </div>
