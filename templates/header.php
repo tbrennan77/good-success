@@ -45,15 +45,28 @@
 <header class="banner">
   <div class="container menu-bar">
     <div class="row">
-        <div class="navbar-header col-lg-12">
-          <nav class="navbar navbar-toggleable-md navbar-light sticky-top pr-0 pl-0">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <a class="navbar-brand" href="#">
+              <?php
+                    if ( get_theme_mod('theme_logo') ) :
+                      echo '<img src="' . esc_url( get_theme_mod('theme_logo') ) . '" class="">';
+                    else:
+                      echo get_bloginfo('name');
+                    endif;
+                ?>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
                 <?php
                   if (has_nav_menu('primary_navigation')) :
                     wp_nav_menu([ 'menu' => 'primary_navigation',
                       'theme_location' => 'primary_navigation',
-                      'container_class' => 'collapse navbar-toggleable-md',
+                      'container_class' => 'collapse navbar-collapse',
+                      'container_id' => 'navbarNav',
                       'menu_id' => false,
-                      'menu_class' => 'nav navbar-nav',
+                      'menu_class' => 'navbar-nav',
                       'depth' => 2,
                       'fallback_cb' => 'bs4navwalker::fallback',
                       'walker' => new bs4navwalker()

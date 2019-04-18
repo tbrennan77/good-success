@@ -29,16 +29,29 @@
 .navbar-light .navbar-nav .nav-item {
 	margin-top: 5px;
 	padding: 5px;
+  display: inline-block;
 }
 .navbar-nav {
-    margin-right: 0;
-    margin-left: auto;
+
+}
+#navbarNav {
+  float: right;
+  padding-top: 5px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 .navbar-brand {
-	padding-top: 0;
+  img {
+    @media (max-width: 767px) {
+      max-width: 200px;
+    }
+  }
 }
 .navbar {
   width: 100%;
+  display: inline-block;
 }
 .navbar-nav .btn-primary {
     -webkit-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
@@ -61,6 +74,7 @@
 }
 .navbar-light .navbar-toggler {
   border-color: rgba(0,0,0,0) !important;
+  float: right;
 }
 .navbar-toggler-icon {
   font-size: 28px !important;
@@ -115,7 +129,7 @@
     padding: 8px 0;
   }
   .navbar-brand {
-    margin-left: 10px;
+
   }
 }
 @media (min-width: 992px) {
@@ -130,7 +144,6 @@
       font-size: 13px;
   }
   .navbar-brand {
-    margin-left: 0px;
   }
 }
 @media only screen and (max-width: 992px) {
