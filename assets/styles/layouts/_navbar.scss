@@ -27,8 +27,8 @@
   padding-bottom: 35px;
 }
 .navbar-light .navbar-nav .nav-item {
-	margin-top: 5px;
-	padding: 5px;
+	margin-top: 0px;
+	padding: 5px 0px;
   display: inline-block;
 }
 .navbar-nav {
@@ -51,7 +51,6 @@
 }
 .navbar {
   width: 100%;
-  display: inline-block;
 }
 .navbar-nav .btn-primary {
     -webkit-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
@@ -159,7 +158,7 @@
 @media (min-width: 1200px) { 
   .navbar-light .navbar-nav .nav-link,
   #mega-menu-wrap-primary_navigation #mega-menu-primary_navigation>li.mega-menu-item>a.mega-menu-link, .mega-menu-link {
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 10px;
   }
   .navbar-collapse .btn-outline-primary, .btn-primary {
